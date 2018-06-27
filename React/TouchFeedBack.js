@@ -9,7 +9,7 @@ export default class TouchFeedBack extends Component {
     };
 
     state = {
-      currentStyle: ''
+      currentStyle: {}
     };
 
     touchStart = () => {
