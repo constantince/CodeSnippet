@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.css';
 export default class TouchFeedBack extends Component {
     static propTypes = {
         className: PropTypes.string,
