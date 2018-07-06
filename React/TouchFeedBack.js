@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './index.css';
 export default class TouchFeedBack extends Component {
     static propTypes = {
         className: PropTypes.string,
@@ -16,9 +17,9 @@ export default class TouchFeedBack extends Component {
             currentStyle: {
                 opacity: .5,
                 backgroundColor: 'transparent',
-               '-webkit-transform': 'translate(.03rem, .03rem)',
-               '-webkit-tap-highlight-color' : 'transparent',
-               transform: 'translate(.03rem, .03rem)',
+                WebkitTransform: 'translate(.03rem, .03rem)',
+                WebkitTapHighlightColor : 'transparent',
+                transform: 'translate(.03rem, .03rem)',
             }
         });
     };
