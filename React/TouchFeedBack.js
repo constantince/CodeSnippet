@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.css';
+
+const USE_ACTIVE_STYLE = {
+    opacity: .5,
+    backgroundColor: 'transparent',
+    WebkitTransform: 'translate(2px, 2px)',
+    WebkitTapHighlightColor : 'transparent',
+    transform: 'translate(2px, 2px)',
+}
+
 export default class TouchFeedBack extends Component {
     static propTypes = {
         className: PropTypes.string,
@@ -14,13 +22,7 @@ export default class TouchFeedBack extends Component {
 
     touchStart = () => {
         this.setState({
-            currentStyle: {
-                opacity: .5,
-                backgroundColor: 'transparent',
-                WebkitTransform: 'translate(.03rem, .03rem)',
-                WebkitTapHighlightColor : 'transparent',
-                transform: 'translate(.03rem, .03rem)',
-            }
+            currentStyle: USE_ACTIVE_STYLE
         });
     };
 
@@ -36,6 +38,8 @@ export default class TouchFeedBack extends Component {
                     style={{...this.state.currentStyle, ...style}}
                     onTouchStart={this.touchStart}
                     onTouchEnd={this.touchEnd}
+                    onMouseDown={this.touchStart}
+                    onMouseUp={this.touchEnd}
                     onClick={onClick}
             >
                 {children}
