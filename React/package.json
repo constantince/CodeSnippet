@@ -1,0 +1,47 @@
+{
+  "name": "New-wechat",
+  "version": "0.1.0",
+  "proxy": "http://localhost:8541/h1/v7.3",
+  "private": true,
+  "homepage": "",
+  "combintionJs": [
+    "MemberCenter"
+  ],
+  "dependencies": {
+    "antd": "^3.5.3",
+    "axios": "^0.18.0",
+    "console-remote-client": "^0.4.4",
+    "create-react-class": "^15.6.3",
+    "dot-prop-immutable-chain": "0.0.3",
+    "icheck": "^1.0.2",
+    "mockjs": "^1.0.1-beta3",
+    "normalizr": "^3.2.4",
+    "qrcode.react": "^0.8.0",
+    "react": "^16.3.2",
+    "react-barcode": "^1.3.2",
+    "react-dom": "^16.3.2",
+    "react-icheck": "^0.3.8",
+    "react-infinite-scroll-component": "^4.1.0",
+    "react-qrcode": "^0.1.3",
+    "react-redux": "^5.0.7",
+    "react-responsive-modal": "^3.0.2",
+    "react-router": "^3.2.1",
+    "react-scripts": "1.1.4",
+    "react-thunk": "^1.0.0",
+    "react-toast-mobile": "^1.0.10",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "swiper": "^4.2.6",
+    "weixin-js-sdk": "^1.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
